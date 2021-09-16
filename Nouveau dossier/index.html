@@ -4,7 +4,7 @@
 		 <link rel="stylesheet" href="style.css" />
          <title>OhMyFood</title>
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
 
 <header class="headeracc">
@@ -15,7 +15,7 @@
     <section class="search">
          <form class="formenav" method="GET" action="traintement.php">
              <label class="searchFormWrapicon">
-                <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
+                <i class="fas fa fa-map-marker-alt searchFormWrapiconIcon"></i>
              </span>
                  <input class="searchFilterville" type="search" placeholder="Paris,Belleville">
         </form>
@@ -23,29 +23,36 @@
         <div class="bandrole">
             <h2 class="resev">Réservez le menu qui vous conviens</h2>
             <h5>Découvrez des restaurants d'exception, sélèctionnés pas nos soins.</h5>
-            <input class="inputnav" type="submit" value="Explorer nos restaurants">
+            <a class="botomrest" href="#">Explorer nos restaurants</a>
         </div>
         <div class="SearchMenu">
-            <h2 class="headerFonction">Fonctionnement</h2>
+          <h2 class="headerFonction">Fonctionnement</h2>
             <div class="inputnavmenu">
-                <span class="inputnavnav">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <input class="inputnav" type="submit" value="Choisissez votre restaurants">   
-                </span>
-                <span class="inputnavnav">
-                    <i class="fa-solid fa-list-ul"></i>      
-                    <input class="inputnav" type="submit" value="Composez votre menu">
-                </span>          
-                <span class="inputnavnav"><i class="fa-solid fa-store"></i>
-                    <input class="inputnav" type="submit" value="Dégustez au restaurant">
-                </span>
+                <a class="inputnavnav" href="#">
+                  <p class="nombre">1</p>
+                  <i class="fa-solid fa fa-mobile-screen"></i>
+                    Choisissez votre restaurants  
+                    
+                </a>
+                <a class="inputnavnav" href="#">
+                    <p class="nombre">2</p>
+                    <i class="fa-solid fa fa-list-ul"></i>      
+                    Composez votre menu
+                    
+                </a>          
+                <a class="inputnavnav" href="#">
+                    <p class="nombre">3</p>
+                    <i class="fa-solid fa fa-store"></i>
+                    Dégustez au restaurant
+                    
+                </a>
             </div>
         </div>
             <aside class="menuacc">
                 <h3 class="titlemenu">Restaurants</h3>
                 
                 <article class="hebergmentMainCard">
-                    <a href="#" class="hebergementLien">
+                    <a href="page2.html" class="hebergementLien">
                       <figure class="hebergmentMainCardFigure">
                         <img 
                           class="hebergementMainCardFigureImg"
@@ -55,14 +62,14 @@
                         </figcaption>
                       </figure>
                       <div class="hebergementMainCardGrade">
-                        <h4 class="hebergmenentMainCardFigureCaptionTitleTitle">Ménilmontant</h4>
-                        <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                        <h5 class="hebergmenentMainCardFigureCaptionTitleTitle">Ménilmontant</h5>
+                        <i class="fa-light fa fa-heart hebergementMainCardGradeIcon" data-active="false"></i>
                       </div>
                     </a>
                 </article>
 
                     <article class="hebergmentMainCard">
-                        <a href="#" class="hebergementLien">
+                        <a href="page3.html" class="hebergementLien">
                           <figure class="hebergmentMainCardFigure">
                             <img 
                               class="hebergementMainCardFigureImg"
@@ -72,31 +79,31 @@
                             </figcaption>
                           </figure>
                           <div class="hebergementMainCardGrade">
-                            <h4 class="hebergmenentMainCardFigureCaptionTitleTitle">Charonne</h4>
-                            <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                            <h5 class="hebergmenentMainCardFigureCaptionTitleTitle">Charonne</h5>
+                            <i class="fa-light fa fa-heart hebergementMainCardGradeIcon" data-active="false"></i>
                           </div>
                         </a>
                     </article>
 
                         <article class="hebergmentMainCard">
-                            <a href="#" class="hebergementLien">
+                            <a href="page4.html" class="hebergementLien">
                               <figure class="hebergmentMainCardFigure">
                                 <img 
                                   class="hebergementMainCardFigureImg"
                                   src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française.">
                                 <figcaption class="hebergmentMainCardFigureCaption">
-                                  <h3 class="hebergmenentMainCardFigureCaptionTitle">A la française</h3>
+                                  <h3 class="hebergmenentMainCardFigureCaptionTitle">À la française</h3>
                                 </figcaption>
                               </figure>
                               <div class="hebergementMainCardGrade">
-                                <h3 class="hebergmenentMainCardFigureCaptionTitleTitle">Cité Rouge</h3>
-                                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                                <h5 class="hebergmenentMainCardFigureCaptionTitleTitle">Cité Rouge</h5>
+                                <i class="fa-light fa fa-heart hebergementMainCardGradeIcon" data-active="false"></i>
                               </div>
                             </a>
                         </article>
 
                             <article class="hebergmentMainCard">
-                                <a href="#" class="hebergementLien">
+                                <a href="page5.html" class="hebergementLien">
                                   <figure class="hebergmentMainCardFigure">
                                     <img 
                                       class="hebergementMainCardFigureImg"
@@ -106,8 +113,8 @@
                                     </figcaption>
                                   </figure>
                                   <div class="hebergementMainCardGrade">
-                                    <h3 class="hebergmenentMainCardFigureCaptionTitleTitle">Folie-Méricourt</h3>
-                                    <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                                    <h5 class="hebergmenentMainCardFigureCaptionTitleTitle">Folie-Méricourt</h5>
+                                    <i class="fa-light fa fa-heart hebergementMainCardGradeIcon" data-active="false"></i>
                                   </div>
                                 </a>
                             </article>
@@ -126,14 +133,14 @@
   <div class="footermain">
       <h2 class="footerTilte">OhMyFood</h2>
           <div class="footerinfo">
-            <div>
-              <i class="fa-solid fa-utensils"></i>
-              <p>Proposer un restaurant</p>
-            </div>
-              <div>
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p>Devenir partenaire</p>
-            </div>
+              <p>
+                <i class="fa-solid fa fa-utensils"></i>
+                Proposer un restaurant
+              </p>
+              <p>
+                <i class="fa-solid fa fa-handshake-angle"></i>
+                Devenir partenaire
+              </p>
               <p>Mentions légales</p>
               <p>Contact</p>
           </div>

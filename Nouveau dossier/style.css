@@ -1,17 +1,287 @@
-/* Error: expected "{".
- *     ,
- * 191 |           /*couleur mélangé*∕
- *     |                              ^
- *     '
- *   style.scss 191:30  root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@media screen and (min-width: 320px) and (max-width: 475px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 191 \2502            /*couleur mélangé*/\d\a     \2502                               ^\a     \2575 \a   style.scss 191:30  root stylesheet';
+  body {
+    margin: 0;
+    font-family: "Roboto";
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /*menu*/
+  .headermain {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+  }
+
+  .headerTitleacc {
+    font-family: "Shrikhand";
+  }
+
+  .headermain i {
+    padding-right: 10px;
+  }
+
+  .bodyimg {
+    object-fit: cover;
+    max-height: 189px;
+    width: 414px;
+  }
+
+  .menu {
+    border-radius: 1rem 1rem 0 0;
+    border: solid aliceblue;
+    margin-top: -24px;
+    position: relative;
+    background-color: white;
+  }
+
+  .headerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .Entre {
+    border: solid white;
+    border-radius: 1rem;
+    margin: 10px;
+    width: auto;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  }
+
+  .Entre h4 {
+    margin: 5px;
+  }
+
+  .Entre p {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .entreesTitle {
+    width: 38px;
+    margin-top: 50px;
+    border-bottom: solid #99E2D0;
+    margin-left: 10px;
+  }
+
+  .platsTitle {
+    width: 38px;
+    margin-top: 50px;
+    border-bottom: solid #99E2D0;
+    margin-left: 10px;
+  }
+
+  .dessertsTiles {
+    width: 38px;
+    margin-top: 50px;
+    border-bottom: solid #99E2D0;
+    margin-left: 10px;
+  }
+
+  .footer {
+    background-color: #272727;
+    color: white;
+  }
+
+  .footerTilte {
+    font-family: "Shrikhand";
+  }
+
+  .footermain {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*menu*/
+  /*Page d'acceuille*/
+  .Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+  }
+
+  .titlemenu {
+    padding-left: 20px;
+  }
+
+  .headeracc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e90a;
+    height: 40px;
+  }
+
+  .reserv {
+    margin: 0;
+  }
+
+  .hebergementMainCardFigureImg {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    -webkit-border-radius: 2rem 2rem 0 0;
+    -moz-border-radius: 2rem 2rem 0 0;
+    -ms-border-radius: 2rem 2rem 0 0;
+    -o-border-radius: 2rem 2rem 0 0;
+    height: 254px;
+  }
+
+  .hebergmentMainCard {
+    background-color: white;
+    border-radius: 2rem;
+    height: 100%;
+    margin: 20px;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  }
+
+  .hebergmentMainCardFigure {
+    margin: 0;
+    width: auto;
+  }
+
+  .hebergmentMainCardFigureCaption {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .menuacc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #bababa;
+  }
+
+  .hebergementMainCardGrade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .hebergmenentMainCardFigureCaptionTitle {
+    margin: 0;
+  }
+
+  .hebergmenentMainCardFigureCaptionTitleTitle {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hebergmentMainCardFigureCaption {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .searchFilterville {
+    border: 0;
+    background-color: #bababa;
+  }
+
+  .search {
+    text-align: center;
+    background-color: #bababa;
+    padding: 15px;
+  }
+
+  .formenav {
+    background-color: #bababa;
+    padding-left: 60px;
+  }
+
+  .nombre {
+    background-color: blueviolet;
+    width: 20px;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    position: absolute;
+    left: 12px;
+    text-align: center;
+  }
+
+  .botomrest {
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    background-color: #CE69DB;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  }
+
+  .SearchMenu {
+    position: relative;
+  }
+
+  .headerFonction {
+    margin: 20px;
+  }
+
+  .bandrole {
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 20px;
+  }
+
+  .inputnavnav {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 58px;
+    border: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  }
+
+  .inputnavmenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px;
+  }
+
+  .fa {
+    padding-right: 10px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
