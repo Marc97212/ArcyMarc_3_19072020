@@ -25,10 +25,7 @@
             align-items: center;
             background-color: rgb(224, 224, 224);
             
-        }
-        .headerTitleacc {
-          font-family: 'Shrikhand';
-        }
+        }       
         .headermain i {
             padding-right: 10px;
         }
@@ -38,18 +35,49 @@
             width: 414px;
         }
         .menu {
-            border-radius: 1rem 1rem 0 0;
+            border-radius: 2rem 2rem 0 0;
             border: solid aliceblue;
-            margin-top: -24px;
+            margin-top: -30px;
             position: relative;
             background-color: white;
-        }
-        .headerTitle {
+            -webkit-border-radius: 2rem 2rem 0 0;
+            -moz-border-radius: 2rem 2rem 0 0;
+            -ms-border-radius: 2rem 2rem 0 0;
+            -o-border-radius: 2rem 2rem 0 0;
+            border: 0;
+            padding: 10px;
+          }
+        .headerTitle{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            margin: 20px;
+            margin: 10px;
+            font-family: 'Shrikhand';
+            font-weight: normal;
+        }              
+        .Iconarrow {
+          padding-left: 30px;
+          padding-right: 83px;
+        }
+        .headeracc {
+          display: flex;
+          align-items: center;
+          background-color: rgba(234,234,234,255);
+          height: 60px;
+          font-family: 'Shrikhand';
+          font-weight: normal;
+        }  
+        .headeraccc {
+          display: flex;
+          align-items: center;
+          justify-content: center;          
+          height: 60px;
+          font-family: 'Shrikhand';
+          font-weight: normal;
+        }
+        .sectionTitle {
+          font-weight: normal;
         }
         .Entre {
             border: solid white;
@@ -86,16 +114,23 @@
             margin-left: 10px;
         }
         .footer {
-            background-color: #272727;
+            background-color: rgb(51,46,44);
             color: white;
         }
         .footerTilte {
           font-family: 'Shrikhand';
+          font-weight: normal;
         }
         .footermain {
             margin-left: 10px;
             display: flex;
             flex-direction: column;
+        }
+        .Iconfooter {
+          padding-right: 10px;
+        }
+        .fa-utensils {
+          font-weight: 900;
         }
         /*menu*/
         
@@ -109,14 +144,11 @@
         }
         .titlemenu {
           padding-left: 20px;
-        }
-        .headeracc {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e9e9e90a;
-            height: 40px;
-          }         
+          font-size: 30px;
+          padding-top: 30px;
+          margin-bottom: 0;
+          font-weight: 900;
+        }        
           .reserv { 
             margin: 0;
           }
@@ -132,10 +164,24 @@
             }
           .hebergmentMainCard {
             background-color: white;
-            border-radius:  2rem;
+            border-radius:  1rem;
             height: 100%;
             margin: 20px;
             box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+            position: relative;
+            -webkit-border-radius:  1rem;
+            -moz-border-radius:  1rem;
+            -ms-border-radius:  1rem;
+            -o-border-radius:  1rem;
+          }
+          .New {
+            position: absolute;
+            border: 0;
+            background-color: #99e2d0;
+            color:#139273 ;
+            left: 280px;
+            top: 23px;
+            padding: 6px;
           }
           .hebergmentMainCardFigure {
             margin: 0;
@@ -149,7 +195,8 @@
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            background-color: #bababa;
+            background-color: #f1f0f1;
+            padding-bottom: 40px;
           }
           .hebergementMainCardGrade {
             display: flex;
@@ -157,36 +204,44 @@
             justify-content: space-between;
             margin-right: 15px;
             margin-left: 15px;
-            
-          }
+            }
+            .fa-heart {
+              font-size: x-large;
+            }
           .hebergmenentMainCardFigureCaptionTitle {
             margin: 0;
+            padding-right: 150px;
           }
           .hebergmenentMainCardFigureCaptionTitleTitle {
             margin: 0;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-weight: 300;
           }
           .hebergmentMainCardFigureCaption {
             margin-top: 15px;
             margin-right: 15px;
             margin-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
           }
           .searchFilterville {
             border: 0;
-            background-color: #bababa;
+            background-color: #Eaeaea;
+            font-weight: bold;
           }
           .search {
             text-align: center;
-            background-color: #bababa;
+            background-color: #Eaeaea;
             padding: 15px;
           }
           .formenav {
-            background-color: #bababa;
+            background-color: #Eaeaea;
             padding-left: 60px;
           }
           .nombre {
-            background-color: blueviolet;
+            background-color: #9356DC;
             width: 20px;
             border-radius: 2rem;
             -webkit-border-radius: 2rem;
@@ -202,27 +257,47 @@
             -moz-border-radius: 1.5rem;
             -ms-border-radius: 1.5rem;
             -o-border-radius: 1.5rem;
-            background-color: #CE69DB;
+            background: rgb(255,121,218);
+            background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
             width: 100%;
             height: 50px;
-            border: 0;
-            margin: 20px;
+            border: 0;            
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+            color: white;
+            font-weight: bold;
+            .fa {
+              padding-right: 20px;
+            }
+            .IconCarteenchanté {
+              background: rgb(255,121,218);
+              background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            }
           }
           .SearchMenu {
             position: relative;
+            padding-top: 20px;
           }
           .headerFonction {
-            margin: 20px;          
+            padding: 20px;    
+            padding-bottom: 0;      
           }
           .bandrole {
             text-align: center;
             padding-left: 70px;
-            padding-right: 70px;
-            margin: 20px;
+            padding-right: 70px;      
+            padding-bottom: 50px;      
+            background-color: #F6f6f6;
+          }
+          .resev {
+            padding-top: 15px;
+            margin-top: 0;
+            font-weight: 800;
+          }
+          .reservv {
+            font-weight: 400;
           }
           .inputnavnav {
             border-radius: 1rem;
@@ -231,25 +306,57 @@
             -ms-border-radius: 1rem;
             -o-border-radius: 1rem;
             background-color: #f0f0f0;
-            width: 100%;
-            height: 58px;
+            width: 320px;
+            height: 78px;
             border: 0;
             margin: 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            padding-left: 50px;
+            font-size: larger;
             box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
-}
+          }
+          .Iconsearch {
+            padding-right: 30px;
+          }
+          .choix {
+            background-color: #F5edff;
+            .fa {
+              color: purple;
+            }
+          }
+          
           .inputnavmenu {
             display: flex;
             align-items: center;
             flex-direction: column;
             flex-wrap: nowrap;
             margin: 20px;
+            font-weight: bold;
+            margin-bottom: 60px;
           }
-          .fa {
-            padding-right: 10px;
+          .botomrestcomm{
+            border-radius: 1.5rem;
+            -webkit-border-radius: 1.5rem;
+            -moz-border-radius: 1.5rem;
+            -ms-border-radius: 1.5rem;
+            -o-border-radius: 1.5rem;
+            background: rgb(255,121,218);
+            background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            width: 200px;
+            height: 50px;         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+            color: white;
           }
+          .botomcomm {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+          }
+          
 
          
           
