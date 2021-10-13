@@ -555,7 +555,7 @@ a {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   position: absolute;
-  left: 453px;
+  left: -16px;
   text-align: center;
 }
 .SearchMenu .inputnavmenu {
@@ -583,6 +583,7 @@ a {
   padding-left: 50px;
   font-size: larger;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  position: relative;
 }
 
 .bandrole {
