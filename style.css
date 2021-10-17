@@ -120,8 +120,8 @@
 /* animation coeur */
 .heart-container {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .heart-clip {
@@ -186,6 +186,7 @@
 body {
   margin: 0;
   font-family: "Roboto";
+  max-width: 1900px;
 }
 
 a {
@@ -283,13 +284,13 @@ a {
 }
 
 .plat {
-  -webkit-animation: scale-in-hor-center 1.5s;
-  animation: scale-in-hor-center 1.5s;
+  -webkit-animation: scale-in-hor-center 2s;
+  animation: scale-in-hor-center 2s;
 }
 
 .dessert {
-  -webkit-animation: scale-in-hor-center 2s;
-  animation: scale-in-hor-center 2s;
+  -webkit-animation: scale-in-hor-center 3s;
+  animation: scale-in-hor-center 3s;
 }
 
 .Entree {
@@ -407,6 +408,7 @@ a {
   background-color: white;
   border-radius: 2rem;
   height: 36%;
+  width: 900px;
   margin: 20px;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   position: relative;
@@ -421,8 +423,8 @@ a {
   border: 0;
   background-color: #99e2d0;
   color: #139273;
-  left: 280px;
-  top: 23px;
+  right: 30px;
+  top: 13px;
   padding: 6px;
 }
 
@@ -561,7 +563,7 @@ a {
 .SearchMenu .inputnavmenu {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   margin: 20px;
   font-weight: bold;
@@ -895,6 +897,7 @@ a {
     background-color: white;
     border-radius: 2rem;
     height: 100%;
+    width: auto;
     margin: 20px;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
     position: relative;
@@ -909,7 +912,7 @@ a {
     border: 0;
     background-color: #99e2d0;
     color: #139273;
-    left: 280px;
+    right: 30px;
     top: 23px;
     padding: 6px;
   }
