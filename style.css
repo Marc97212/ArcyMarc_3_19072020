@@ -281,16 +281,19 @@ a {
 .debut {
   -webkit-animation: scale-in-hor-center 1s;
   animation: scale-in-hor-center 1s;
+  width: 33%;
 }
 
 .plat {
   -webkit-animation: scale-in-hor-center 2s;
   animation: scale-in-hor-center 2s;
+  width: 33%;
 }
 
 .dessert {
   -webkit-animation: scale-in-hor-center 3s;
   animation: scale-in-hor-center 3s;
+  width: 33%;
 }
 
 .Entree {
@@ -320,6 +323,8 @@ a {
   align-items: center;
   justify-content: space-between;
   font-size: smaller;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .Entre p strong {
   font-size: initial;
@@ -563,7 +568,6 @@ a {
 .SearchMenu .inputnavmenu {
   display: flex;
   align-items: center;
-  flex-direction: row;
   flex-wrap: nowrap;
   margin: 20px;
   font-weight: bold;
@@ -644,6 +648,17 @@ a {
   color: purple;
 }
 
+.menumain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerinfo a {
+  color: white;
+}
+
 @-webkit-keyframes scale-in-hor-center {
   0% {
     -webkit-transform: scaleX(0);
@@ -669,6 +684,28 @@ a {
   }
 }
 /* pc */
+/*tablette*/
+@media screen and (min-width: 428px) and (max-width: 768px) {
+  .inputnavmenu {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .menuacc {
+    flex-wrap: nowrap;
+  }
+
+  .resto {
+    flex-wrap: nowrap;
+    height: auto;
+    width: auto;
+  }
+
+  .hebergmentMainCard {
+    width: auto;
+  }
+}
+/*tablette*/
 @media screen and (min-width: 320px) and (max-width: 475px) {
   .header {
     display: flex;
@@ -772,16 +809,19 @@ a {
   .debut {
     -webkit-animation: scale-in-hor-center 1s;
     animation: scale-in-hor-center 1s;
+    width: auto;
   }
 
   .plat {
     -webkit-animation: scale-in-hor-center 1.5s;
     animation: scale-in-hor-center 1.5s;
+    width: auto;
   }
 
   .dessert {
     -webkit-animation: scale-in-hor-center 2s;
     animation: scale-in-hor-center 2s;
+    width: auto;
   }
 
   .Entree {
@@ -933,6 +973,11 @@ a {
     flex-wrap: nowrap;
     background-color: #f1f0f1;
     padding-bottom: 40px;
+  }
+
+  .menumain {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .resto {
