@@ -851,6 +851,8 @@ a {
     align-items: center;
     justify-content: space-between;
     font-size: smaller;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .Entre p strong {
     font-size: initial;
