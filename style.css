@@ -215,7 +215,6 @@ a {
   border: solid aliceblue;
   margin-top: -30px;
   position: relative;
-  background-color: white;
   -webkit-border-radius: 2rem 2rem 0 0;
   -moz-border-radius: 2rem 2rem 0 0;
   -ms-border-radius: 2rem 2rem 0 0;
@@ -306,7 +305,6 @@ a {
   border: solid white;
   border-radius: 1rem;
   margin: 10px;
-  width: auto;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   display: flex;
   flex-direction: row;
@@ -736,21 +734,6 @@ a {
   .bodyimg {
     object-fit: cover;
     max-height: 189px;
-    width: 414px;
-  }
-
-  .menu {
-    border-radius: 2rem 2rem 0 0;
-    border: solid aliceblue;
-    margin-top: -30px;
-    position: relative;
-    background-color: white;
-    -webkit-border-radius: 2rem 2rem 0 0;
-    -moz-border-radius: 2rem 2rem 0 0;
-    -ms-border-radius: 2rem 2rem 0 0;
-    -o-border-radius: 2rem 2rem 0 0;
-    border: 0;
-    padding: 10px;
   }
 
   .headerTitle {
@@ -796,15 +779,6 @@ a {
     border-radius: 0 1rem 1rem 0;
     position: relative;
   }
-  .iconplat .fa-check-circle {
-    width: 0;
-    opacity: 0;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    font-size: 25px;
-    color: white;
-  }
 
   .debut {
     -webkit-animation: scale-in-hor-center 1s;
@@ -815,54 +789,47 @@ a {
   .plat {
     -webkit-animation: scale-in-hor-center 1.5s;
     animation: scale-in-hor-center 1.5s;
-    width: auto;
+    width: 100%;
   }
 
   .dessert {
     -webkit-animation: scale-in-hor-center 2s;
     animation: scale-in-hor-center 2s;
-    width: auto;
+    width: 100%;
   }
 
   .Entree {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Entree .description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Entree .information {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
-
-  .Entre {
-    border: solid white;
-    border-radius: 1rem;
-    margin: 10px;
-    width: auto;
-    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .Entree .information p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
   }
-
-  .Entre h4 {
-    margin: 5px;
+  .Entree .information strong {
+    display: block;
+    padding-right: 5px;
   }
 
   .Entre p {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: smaller;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   .Entre p strong {
     font-size: initial;
-  }
-
-  .entreesTitle {
-    width: 38px;
-    margin-top: 50px;
-    border-bottom: solid #99E2D0;
-    margin-left: 10px;
   }
 
   .platsTitle {
@@ -1095,7 +1062,7 @@ a {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 20px;
+    margin: 20px 0 20px 7px;
     font-weight: bold;
     margin-bottom: 60px;
   }
@@ -1109,7 +1076,7 @@ a {
     width: 320px;
     height: 78px;
     border: 0;
-    margin: 20px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
     padding-left: 50px;
