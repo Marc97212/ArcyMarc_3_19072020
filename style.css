@@ -92,9 +92,15 @@
 /* animation check */
 /* animation coeur */
 .heart-container {
-  position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+.heart-container i:hover, .heart-container i:active {
+  animation: pulse 0.6s 0.3s forwards;
+}
+.heart-container i:hover:before, .heart-container i:active:before {
+  color: #FF79DA;
+  font-weight: 900;
 }
 
 .heart-clip {
@@ -1009,14 +1015,14 @@ a {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     background-color: #f0f0f0;
-    width: 320px;
+    width: 100%;
     height: 78px;
     border: 0;
     margin: 20px 0;
     display: flex;
     align-items: center;
     padding-left: 50px;
-    font-size: larger;
+    font-size: 1;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   }
 
